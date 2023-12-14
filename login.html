@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body>
+<form name="loginForm" method="post" action="login.php">
+<table width="20%" bgcolor="928D8C" align="center">
+
+<tr>
+<td colspan=2><center><font size=4><b>Admin log-in</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "Luscheauto" && form.pwd.value == "Lusche123")
+{
+    window.open('https://docs.google.com/spreadsheets/d/1CR6ssRA0NJ2z5kI4U9KW32ezqmv3mv-zhocSFPIjEEo/edit?usp=sharing')
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
